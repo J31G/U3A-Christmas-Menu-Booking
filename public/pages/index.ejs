@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home</title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css">
+
+</head>
+<body>
+
+  <div class="container">
+
+    <div class="my-3">
+      <div class="row align-items-center">
+        <div class="col-sm d-flex justify-content-center">
+          <img src="https://www.u3a.org.uk/images/icons/u3a_orange_logo.png" alt="u2a Logo" class="mw-100">
+        </div>
+        <div class="col-sm">
+          <div class="d-flex flex-column justify-content-center">
+            <h2 class="mt-0">u3a - Headington</h2>
+            <p>This year u3a Headington will be going to <a href="https://blackboyoxford.co.uk/" target="_blank">The Black Boy</a> for our Christmas party. All are welcome to join, although we need to know numbers and orders ASAP to let them know. Below is the three-course set menu order form. Please insert your name, email and telephone number then your choice for starter, main and dessert. Sylvie Lambertstock will receive this once you press the submit button. </p>
+          </div>
+        </div>
+      </div>
+
+    <form id="christmasMeal" action="/" method="post">
+
+      <div class="row">
+        <div class="col-sm mb-3">
+  
+          <label for="christmasName" class="form-label">Name</label>
+          <input name="christmasName" type="input" class="form-control form-control-lg" id="christmasName" placeholder="Joe Bloggs" required>
+ 
+        </div>
+        <div class="col-sm mb-3">
+
+          <label for="christmasEmail" class="form-label">Email</label>
+          <input name="christmasEmail" type="email" class="form-control form-control-lg" id="christmasEmail" placeholder="joe.bloggs@example.com" required>
+
+        </div>
+        <div class="col-sm mb-3">
+
+          <label for="christmasPhone" class="form-label">Telephone Number</label>
+          <input name="christmasPhone" type="tel" class="form-control form-control-lg" id="christmasPhone" placeholder="01865 123456" required>
+
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-sm my-4 text-center">
+          <h5>Feastive Party Menu</h5>
+          <div class="form-text">3 Course Set Menu £30<br />including a Complimentary Glass of Martinetti Prosecoo</div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-sm mb-3">
+          <label for="christmasStarter" class="form-label">Starter</label>
+          <select name="christmasStarter" id="christmasStarter" class="form-select form-select-lg mb-3" required>
+            <option value="" selected disabled hidden>Click here to select your starter...</option>
+            <option value="Celeriac Soup">Celeriac Truffle & Apple Soup, Rustic Bread (ve, gfa)</option>
+            <option value="Hot Smoked Salmon">Hot Smoked Salmon Cocktail, Avocado, Mango, Cucumber, Coriander, Chilli (gf)</option>
+            <option value="Ham Hock">Slow-cooked Ham Hock & Garden Pea Terrine, Mustard Piccalilli, Onion Toast, Watercress (gfa)</option>
+            <option value="Mini Baked Flax">Mini Baked Flax & Honey Goats Cheese, Roasted Fig Chutney, Dressed Rocket & Crisp Bread (v, gfa)</option>
+            <option value="Shallot Tarte Tatin">Glazed Shallot Tarte Tatin, Warm Green Beans, Rocket Pesto, Toasted Pumpkin Seeds (v)</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-sm mb-3">
+          <label for="christmasMain" class="form-label">Main</label>
+          <select name="christmasMain" id="christmasMain" class="form-select form-select-lg mb-3" required>
+            <option value="" selected disabled hidden>Click here to select your main...</option>
+            <option value="Roast Turkey">Roast Oxfordshire Turkey Breast, Pigs in Blanket, Cranberry & Sage Stuffing, Red Wine Jus (gfa)</option>
+            <option value="Sweet Potato Tart">Oven Roasted Sweet Potato, Cashew & Apricot Chutney Tart, Watercress, (ve, gf)</option>
+            <option value="Slow Roasted Beef">Slow Roasted Rolled Beef Feather Blade, Mustard Mash, Baby Onions, Horseradish Crème Fraiche (gf)</option>
+            <option value="Sage & Fennel Porchetta">Rolled Sage & Fennel Porchetta, Mustard Mash, Crackling, Spiced Apple Sauce (gf)</option>
+            <option value="Grilled Salmon Supreme">Grilled Salmon Supreme, Tiger Prawns in Burnt Caper, Parsley & Lemon Butter Sauce, Samphire (gf)</option>
+          </select>
+          <div id="dessertHelp" class="form-text">All Served with Braised Red Cabbage, Shaved Brussel Sprouts, Roasted Honey Parsnips & Carrots and Garlic & Thyme Roasted Potatoes (gf, vea)</div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-sm mb-3">
+          <label for="christmasDessert" class="form-label">Dessert</label>
+          <select name="christmasDessert" id="christmasDessert" class="form-select form-select-lg mb-3" required>
+            <option value="" selected disabled hidden>Click here to select your dessert...</option>
+            <option value="Christmas Pudding">Christmas Pudding, Red Currants, Brandy Sauce (gf, vea)</option>
+            <option value="Salted Caramel Torte">Salted Caramel Chocolate Torte, Vanilla Cream, Pistachio Brittle (v)</option>
+            <option value="Lemon Posset">Lemon Posset, Spiced Berry Compote and House Made Shortbread (v, gfa)</option>
+            <option value="Sticky Toffee Pudding">Sticky Toffee Pudding, Pecan Toffee Sauce, Clotted Cream (v)</option>
+            <option value="Cheese Selection">Selection of Cheeses, Chutney, Grapes, Celery, Radish, Crackers (gfa)</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-sm mb-4">
+          <label for="christmasNotes" class="form-label">Notes</label>
+          <textarea name="christmasNotes" class="form-control" id="christmasNotes" rows="3"></textarea>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-sm mb-4 text-center">
+          <div class="form-text">Please note all thier food is prepared and cooked fresh on premises. If you have any allergies or queries, please just bring it to their attention and they will do our utmost to accommodate you.<br />(ve- Vegan, vea – Vegan Available, gf – Gluten Free, gfa – Gluten Free Available)</div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-sm mb-4 text-center">
+          <button type="submit" class="btn btn-primary">Submit</button>
+        </div>
+      </div>
+      
+    </form>
+  </div>
+
+  <!-- JS -->
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+  
+</body>
+</html>
