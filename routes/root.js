@@ -9,7 +9,7 @@ const router = express.Router();
 const transporter = nodemailer.createTransport({
   host: process.env.SMTP_HOST,
   port: process.env.SMTP_PORT,
-  secure: false,
+  secure: process.env.SMTP_SECURE,
   auth: {
     user: process.env.STMP_USER,
     pass: process.env.STMP_PASS,
