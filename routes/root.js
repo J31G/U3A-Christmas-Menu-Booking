@@ -54,7 +54,7 @@ router.post('/', async (req, res) => {
 
   // Send Email
   transporter.sendMail({
-    from: '"U3A Oxford" <hello@u3a-oxford.org.uk>',
+    from: '"U3A Headington" <hello@u3a-headington.org.uk>',
     to: 'sylvie.lambertstock@gmail.com',
     subject: 'U3A Christmas Submission',
     text: convert(html),
