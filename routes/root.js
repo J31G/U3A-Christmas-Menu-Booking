@@ -31,12 +31,11 @@ router.post('/', async (req, res) => {
   html = html.replaceAll('{{STARTER}}', req?.body?.christmasStarter);
   html = html.replaceAll('{{MAIN}}', req?.body?.christmasMain);
   html = html.replaceAll('{{DESSERT}}', req?.body?.christmasDessert);
-  html = html.replaceAll('{{NOTES}}', req?.body?.christmasNotes);
 
   // Send Email
   transporter.sendMail({
     from: '"U3A Oxford" <hello@u3a-oxford.org.uk>',
-    to: 'lambertstock@gmail.com',
+    to: 'sylvie.lambertstock@gmail.com',
     subject: 'U3A Christmas Submission',
     text: convert(html),
     html,
