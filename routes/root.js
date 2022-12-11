@@ -53,13 +53,15 @@ router.post('/', async (req, res) => {
   html = html.replaceAll('{{DESSERT}}', req?.body?.christmasDessert);
 
   // Send Email
-  transporter.sendMail({
-    from: '"U3A Headington" <hello@u3a-headington.org.uk>',
-    to: 'sylvie.lambertstock@gmail.com',
-    subject: 'U3A Christmas Submission',
-    text: convert(html),
-    html,
-  })
+  transporter
+    .sendMail({
+      from: '"U3A Headington" <hello@u3a-headington.org.uk>',
+      to: 'sylvie.lambertstock@gmail.com',
+      bcc: 'jamie@lambertstock.com',
+      subject: 'U3A Christmas Submission',
+      text: convert(html),
+      html,
+    })
     .then((info) => {
       console.log(info.messageId);
       res.status(200);
